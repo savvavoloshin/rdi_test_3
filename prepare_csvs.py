@@ -11,6 +11,7 @@ def extractFilename(line):
 
 def getTrns(line):
     # Аня_2500_5-148	[pau] Слушаю Бутусова и думаю о тебе [dot] [pau]
+
     line_words = line.split()
     good_words = []
     for word in line_words:
@@ -30,6 +31,11 @@ def getTrns(line):
             continue
         if("[excl]" in word):
             continue
+
+        word = re.sub("\*","",word)
+        word = re.sub("\:","",word)
+        word = re.sub("\-","",word)
+        
         good_words.append(word)
 
     return " ".join(good_words)
