@@ -34,7 +34,11 @@ def getTrns(line):
 
         word = re.sub("\*","",word)
         word = re.sub("\:","",word)
-        word = re.sub("\-","",word)
+        word = re.sub("\-"," ",word)
+        # '«', '»'
+        word = re.sub("\»","",word)
+        word = re.sub("\«","",word)
+        word = re.sub("\.","",word)
         
         good_words.append(word)
 

@@ -1,0 +1,118 @@
+I Saved new best validating model with loss 37.684343 to: chckpt/best_dev-6144
+--------------------------------------------------------------------------------
+I FINISHED optimization in 3 days, 5:20:41.987616
+I Loading best validating checkpoint from chckpt/best_dev-6144
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: global_step
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/weights
+Testing model on ../Dataset/test/test.csv
+Test epoch | Steps: 300 | Elapsed Time: 0:22:05                                                    
+Test on ../Dataset/test/test.csv - WER: 0.830514, CER: 0.280135, loss: 49.306099
+--------------------------------------------------------------------------------
+Best WER: 
+--------------------------------------------------------------------------------
+WER: 0.250000, CER: 0.050000, loss: 5.779129
+ - wav: file://../Dataset/test/text_for_read_books_1_часть-132.wav
+ - src: "ну как провели время"
+ - res: "ну ка провели время"
+--------------------------------------------------------------------------------
+WER: 0.333333, CER: 0.160000, loss: 16.449787
+ - wav: file://../Dataset/test/text_for_read_books_1_часть-131.wav
+ - src: "я буду таким умным как вы"
+ - res: "я буду такемо умлум как вы"
+--------------------------------------------------------------------------------
+WER: 0.333333, CER: 0.064516, loss: 10.913234
+ - wav: file://../Dataset/test/text_for_read_books_2_часть-183.wav
+ - src: "может быть он просто не услышал"
+ - res: "может быть он просто неуслшал"
+--------------------------------------------------------------------------------
+WER: 0.375000, CER: 0.076923, loss: 12.267173
+ - wav: file://../Dataset/test/text_for_read_books_2_часть-109.wav
+ - src: "но в то утро за завтраком он разревелся"
+ - res: "но в то утра зазавтракум он разревелся"
+--------------------------------------------------------------------------------
+WER: 0.400000, CER: 0.162162, loss: 17.866661
+ - wav: file://../Dataset/test/Аня_1000_2-106.wav
+ - src: "поздравляю тебя с покупкой автомобиля"
+ - res: "поздравляю тебя с пококо овтомобели"
+--------------------------------------------------------------------------------
+Median WER: 
+--------------------------------------------------------------------------------
+WER: 0.850000, CER: 0.328358, loss: 140.729172
+ - wav: file://../Dataset/test/text_for_read_books_1_часть-118.wav
+ - src: "он лишь пробежал глазами текст пропуская целые абзацы тысяча человек самая большая толпа пришли сегодня на панихиду по четверым убитым"
+ - res: "он ле пробежал базамидект прокоскаяться ла тза пысчичелолек сомобальша тал па прищлисигодня на понеиду почитверём убитам"
+--------------------------------------------------------------------------------
+WER: 0.857143, CER: 0.309524, loss: 146.146713
+ - wav: file://../Dataset/test/text_for_read_books_2_часть-164.wav
+ - src: "судя по всему он рос без надлежащей заботы без родительской любви и не усвоил с детства принятые в обществе моральные ценности"
+ - res: "судетповсему он рос беснодлежащий забокый безрадидельсколювиь и неусвол здетто принетые говествема раниецерлюстя"
+--------------------------------------------------------------------------------
+WER: 0.857143, CER: 0.393617, loss: 113.398392
+ - wav: file://../Dataset/test/text_for_read_books_2_часть-18.wav
+ - src: "и на нём есть место не только для богатея с его псом и не для пяти и не для десятка пассажиров"
+ - res: "и но ням вестместонетолькдлябыготтес егот сом и е унеде питсий и недлвесят ко посожижув"
+--------------------------------------------------------------------------------
+WER: 0.857143, CER: 0.227848, loss: 56.625351
+ - wav: file://../Dataset/test/text_for_read_books_2_часть-192.wav
+ - src: "после всех мук которые я пережил и переживаю как может смерть казаться мне злом"
+ - res: "после в сех му каторы е перужул и пережеваю какмужетцмерть озатцям не злом"
+--------------------------------------------------------------------------------
+WER: 0.857143, CER: 0.261538, loss: 55.379494
+ - wav: file://../Dataset/test/text_for_read_books_2_часть-151.wav
+ - src: "респектабельная и относительно защищенная от превратностей судьбы"
+ - res: "респектабильло и тнросидельи защищённа опревратности суьбу"
+--------------------------------------------------------------------------------
+Worst WER: 
+--------------------------------------------------------------------------------
+WER: 1.100000, CER: 0.333333, loss: 69.576584
+ - wav: file://../Dataset/test/Аня_1000_2-144.wav
+ - src: "возил зерно из ростова в новосибирск в новороссийск в новороссийск"
+ - res: "во зел  зержно и заросто  вно всибиск воновароссь иск в нова расиск"
+--------------------------------------------------------------------------------
+WER: 1.142857, CER: 0.304348, loss: 45.408417
+ - wav: file://../Dataset/test/Аня_1000_2-157.wav
+ - src: "мои самые искренние поздравления с днем ангела"
+ - res: "мо е самый и скрене поздрления изнём аныла"
+--------------------------------------------------------------------------------
+WER: 1.153846, CER: 0.371681, loss: 148.480972
+ - wav: file://../Dataset/test/text_for_read_books_2_часть-155.wav
+ - src: "авторы исследовали в процессе подачи апелляций четверых мужчин осуждённых за кажущиеся немотивированными убийства"
+ - res: "а вторе и следовлив протя си подачи о прилятця чтвернущин о суждё ном закарищисят нематеверовонаме увиство"
+--------------------------------------------------------------------------------
+WER: 1.200000, CER: 0.320000, loss: 24.620516
+ - wav: file://../Dataset/test/text_for_read_books_1_часть-11.wav
+ - src: "эй вы стойте кому говорят"
+ - res: "э ввые сстойти каму го варят"
+--------------------------------------------------------------------------------
+WER: 1.333333, CER: 0.470588, loss: 41.558880
+ - wav: file://../Dataset/test/text_for_read_books_2_часть-17.wav
+ - src: "быть может мне подбросил её убийца"
+ - res: "бы теможет м мыне попрось а ё биья"
+ 
+I Exporting the model...
+I Loading best validating checkpoint from chckpt/best_dev-6144
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/weights
+I Models exported at output_models/
+I Model metadata file saved to output_models/author_model_0.0.1.md. Before submitting the exported model for publishing make sure all information in the metadata file is correct, and complete the URL fields.

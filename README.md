@@ -14,4 +14,8 @@
 2) с помощью программы создал csv файлы
 2.1) создал alphabet.txt для кирилицы
 3) "перегнал" wav-данные в 16000 sample rate
-4) запустил deepspeech
+4) запустил deepspeech:
+
+$ python DeepSpeech.py --n_hidden 2048 --epochs 3 --dev_files ../Dataset/dev/dev.csv --test_files ../Dataset/test/test.csv --train_files ../Dataset/train/train.csv --learning_rate 0.0001 --export_dir output_models/ --checkpoint_dir chckpt
+
+результаты см. training.log
